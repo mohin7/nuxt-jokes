@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>{{joke}}</p>
+    <p><nuxt-link :to="{path: '/jokes/'+id}">{{joke}}</nuxt-link></p>
   </div>
 </template>
 

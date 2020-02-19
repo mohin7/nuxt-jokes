@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><strong>JokesApp</strong></a>
+    <nuxt-link class="navbar-brand" :to="{path: '/'}"><strong>JokesApp</strong></nuxt-link>
     <button
       class="navbar-toggler"
       type="button"
@@ -16,12 +16,12 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#"
-            >Home <span class="sr-only">(current)</span></a
+          <nuxt-link class="nav-link" :to="{path: '/'}"
+            >Home <span class="sr-only">(current)</span></nuxt-link
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Jokes</a>
+          <nuxt-link :to="{path: '/jokes/'}" class="nav-link" >Jokes</nuxt-link>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About</a>
